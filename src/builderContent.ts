@@ -265,5 +265,5 @@ const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
 const options = { inventory }
 
 const script1 = new Script1()
-script1.init(options)
+script1.init()
 }
