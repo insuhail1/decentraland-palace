@@ -6,10 +6,20 @@ export const eventManager = new EventManager()
 @EventConstructor()
 export class LockInitialised {
     lock: Lock
-    hasValidKey: Boolean
+    authorised: Boolean
     constructor(public _lock: Lock, public _hasValidKey: Boolean) {
         this.lock = _lock
-        this.hasValidKey = _hasValidKey
+        this.authorised = _hasValidKey
+    }
+}
+
+@EventConstructor()
+export class Retry {
+    lock: Lock
+    authorised: Boolean
+    constructor(public _lock: Lock, public _hasValidKey: Boolean) {
+        this.lock = _lock
+        this.authorised = _hasValidKey
     }
 }
 

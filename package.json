@@ -11,14 +11,22 @@
     "ecs:install-next": "npm install --save-dev decentraland-ecs@next"
   },
   "devDependencies": {
-    "decentraland-ecs": "latest"
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "decentraland-ecs": "latest",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
+    "@dcl/ui-scene-utils": "^1.8.1",
     "decentraland-builder-scripts": "latest",
     "decentraland-ecs": "latest",
     "eth-connect": "^6.0.2"
   },
   "bundledDependencies": [
-    "eth-connect"
+    "eth-connect",
+    "@dcl/ui-scene-utils"
   ]
 }
